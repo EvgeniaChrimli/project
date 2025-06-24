@@ -48,6 +48,7 @@
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+  transition: all 1s ease-out;
 
   &:hover {
     background: linear-gradient(180deg, #ff9595 0%, #c17aff 127.07%);
@@ -171,32 +172,32 @@
 }
 
 .img-1 {
-  background-image: url("../assets/images/1.svg");
+  background-image: url("/assets/images/1.svg");
 }
 .bodyCol:hover .img-1 {
-  background-image: url("../assets/images/4W.svg");
+  background-image: url("/assets/images/4W.svg");
 }
 
 .img-2 {
-  background-image: url("../assets/images/2.svg");
+  background-image: url("/assets/images/2.svg");
 }
 .bodyCol:hover .img-2 {
-  background-image: url("../assets/images/3W.svg");
+  background-image: url("/assets/images/3W.svg");
 }
 
 .img-3 {
-  background-image: url("../assets/images/3.svg");
+  background-image: url("/assets/images/3.svg");
 }
 .bodyCol:hover .img-3 {
-  background-image: url("../assets/images/1W.svg");
+  background-image: url("/assets/images/1W.svg");
 }
 
 .img-4 {
-  background-image: url("../assets/images/4.svg");
+  background-image: url("/assets/images/4.svg");
 }
 
 .img-5 {
-  background-image: url("../assets/images/5.svg");
+  background-image: url("/assets/images/5.svg");
 }
 .bodyCol:hover .img-5 {
   background-image: url("/assets/images/2W.svg");
