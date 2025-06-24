@@ -239,8 +239,8 @@ function typeText(el, text, speed = 10) {
 async function startTyping() {
   for (const p of paragraphs) {
     const text = p.dataset.text;
-    await typeText(p, text, 25); // скорость символов
-    await new Promise((r) => setTimeout(r, 100)); // пауза между абзацами
+    await typeText(p, text, 25);
+    await new Promise((r) => setTimeout(r, 100));
   }
 }
 
@@ -260,3 +260,11 @@ const observer2 = new IntersectionObserver(
 );
 const target = document.getElementById("who");
 observer2.observe(target);
+
+const videos = document.querySelectorAll("video");
+videos.forEach((video) => {
+  video.muted = true; // программно
+  video.play().catch((err) => {
+    console.warn("Autoplay failed:", err);
+  });
+});
