@@ -260,11 +260,3 @@ const observer2 = new IntersectionObserver(
 );
 const target = document.getElementById("who");
 observer2.observe(target);
-
-const videos = document.querySelectorAll("video");
-videos.forEach((video) => {
-  video.muted = true; // программно
-  video.play().catch((err) => {
-    console.warn("Autoplay failed:", err);
-  });
-});
