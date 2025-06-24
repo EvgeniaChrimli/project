@@ -1,0 +1,114 @@
+@use "./variables";
+
+.top {
+  font-family: variables.$jun, sans-serif;
+
+  &_body {
+    padding-top: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 32px;
+
+    @media (max-width: 1400px) {
+      padding-top: 175px;
+    }
+
+    @media (max-width: 1194px) {
+      padding-top: 213px;
+    }
+
+    @media (max-width: 834px) {
+      padding-top: 409px;
+    }
+  }
+
+  &_title {
+    text-transform: uppercase;
+    font-size: clamp(40px, calc(6.09vw + 25.59px), 112px);
+    text-align: center;
+    max-width: 1138px;
+    margin-bottom: 144px;
+
+    @media (max-width: 1400px) {
+      margin-bottom: 72px;
+    }
+
+    @media (max-width: 1194px) {
+      margin-bottom: 98px;
+    }
+
+    @media (max-width: 834px) {
+      margin-bottom: 296px;
+    }
+
+    @media (max-width: 550px) {
+      padding: 0 20px;
+      font-size: 40px;
+      margin-bottom: 216px;
+    }
+
+    @media (max-width: 375px) {
+      margin-bottom: 216px;
+    }
+
+    @media (max-width: 341px) {
+      font-size: 35px;
+    }
+  }
+
+  &_title-italic {
+    font-family: variables.$jun-italic, sans-serif;
+  }
+
+  &_btn {
+    border: 1px solid transparent;
+    background-color: white;
+    color: black;
+    font-family: variables.$helvetica, sans-serif;
+    font-size: clamp(17px, 0.46vw + 15.28px, 24px);
+    border-radius: 24px;
+    cursor: pointer;
+    padding: 29px 77px;
+    margin-bottom: 51px;
+
+    @media (max-width: 1400px) {
+      padding: 24px 60px;
+    }
+
+    @media (max-width: 1194px) {
+      padding: 24px 42px;
+    }
+
+    @media (max-width: 834px) {
+      padding: 24px 53px;
+    }
+
+    @media (max-width: 375px) {
+      padding: 16px 54px;
+      border-radius: 28px;
+    }
+  }
+  &_btn:hover {
+    color: white;
+    background-color: rgba(193, 122, 255, 1);
+  }
+  &_btn:active {
+    background-color: rgba(31, 31, 31, 1);
+    color: white;
+  }
+
+  &_pause-btn {
+    align-self: flex-start;
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: all 1s;
+    @media (max-width: 960px) {
+      margin-left: 10px;
+    }
+  }
+  &_pause-btn:active {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,55 @@
+@import "./styles/variables", "./styles/fonts", "./styles/header",
+  "./styles/top", "./styles/who", "./styles/cursor", "./styles/serwices",
+  "./styles/try", "./styles/rewievs", "./styles/form", "./styles/footer";
+
+html,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1578px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1441px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (max-width: 1195px) {
+  .container {
+    max-width: 954px;
+  }
+}
+
+@media (max-width: 835px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (max-width: 376px) {
+  .container {
+    max-width: 359px;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}

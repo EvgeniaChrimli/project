@@ -1,0 +1,137 @@
+@use "./variables";
+
+.form {
+  margin-bottom: 200px;
+  @media (max-width: 441px) {
+    padding: 0 10px;
+    margin-bottom: 120px;
+  }
+  @media (max-width: 375px) {
+    margin-bottom: 100px;
+  }
+  &_title {
+    font-size: clamp(40px, calc(4.09vw + 23.57px), 112px);
+    text-transform: uppercase;
+    font-family: variables.$jun, sans-serif;
+    margin-bottom: clamp(32px, 5vw, 72px);
+  }
+
+  &_title-italic {
+    font-family: variables.$jun-italic, sans-serif;
+  }
+}
+
+.form-wrap {
+  border: 3px solid black;
+  border-radius: 24px;
+  max-width: 784px;
+  margin: 0 auto;
+
+  @media (max-width: 1441px) {
+    max-width: 628px;
+  }
+
+  &_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 56px 131px 72px 131px;
+    gap: 48px;
+    width: 100%;
+    min-width: 518px;
+
+    @media (max-width: 1441px) {
+      padding: 47px 104px 64px 104px;
+      min-width: 410;
+    }
+
+    @media (max-width: 1441px) {
+      padding: 64px 92px;
+      min-width: 410px;
+    }
+    @media (max-width: 441px) {
+      min-width: 279px;
+      padding: 40px 40px 56px 40px;
+    }
+  }
+
+  &_btn {
+    align-self: center;
+    cursor: pointer;
+    width: auto;
+    padding: 29px 62px;
+    background-color: rgba(193, 122, 255, 1);
+    border: transparent;
+    border-radius: 24px;
+    color: white;
+    font-size: clamp(1.0625rem, 0.9567rem + 0.4575vw, 1.5rem);
+    font-family: variables.$helvetica, sans-serif;
+
+    &:hover {
+      background-color: rgba(255, 149, 149, 1);
+    }
+    &:active {
+      background-color: rgba(31, 31, 31, 1);
+    }
+
+    @media (max-width: 1441px) {
+      padding: 25px 48px;
+    }
+  }
+}
+.input-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &_name {
+    height: 48px;
+
+    @media (max-width: 1441px) {
+      height: 40px;
+    }
+  }
+
+  &_mail {
+    height: 48px;
+
+    @media (max-width: 1441px) {
+      height: 40px;
+    }
+  }
+
+  &_comment {
+    height: 96px;
+  }
+}
+
+.input-wrap input {
+  border: 1px solid rgba(84, 84, 84, 1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  width: 100%;
+  max-width: 518px;
+  margin-bottom: clamp(24px, 5vw, 32px);
+  background: white;
+  background-clip: padding-box;
+  cursor: pointer;
+}
+
+.input-wrap input:hover {
+  border: 1px solid transparent;
+  background: linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(180deg, #ff9595 0%, #c17aff 127.07%) border-box;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+}
+
+.input-wrap input:active {
+  border: 1px solid rgba(0, 0, 0, 1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  background: white;
+}
+.input-wrap label {
+  margin-bottom: 8px;
+  font-family: variables.$helvetica, sans-serif;
+  font-size: clamp(1.0625rem, 0.9567rem + 0.4575vw, 1.5rem);
+}

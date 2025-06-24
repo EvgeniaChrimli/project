@@ -1,0 +1,88 @@
+@use "./variables";
+.footer {
+  background-color: rgba(27, 27, 27, 1);
+  padding: 64px 0 38px 0;
+
+  &_body-row {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 752px) {
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+  }
+
+  &_body-left {
+    font-size: clamp(38px, calc(4.09vw + 23.57px), 112px);
+    text-transform: uppercase;
+    font-family: variables.$jun, sans-serif;
+    color: white;
+    max-width: 800px;
+
+    @media (max-width: 752px) {
+      max-width: 450px;
+    }
+
+    @media (max-width: 362px) {
+      max-width: 270px;
+    }
+  }
+
+  &_body-right {
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 752px) {
+      flex-direction: row;
+      gap: 100px;
+    }
+    @media (max-width: 362px) {
+      gap: 70px;
+    }
+  }
+
+  &_logo {
+    width: calc(5.8vw + 60px);
+    margin-bottom: clamp(4.6875rem, 3.962rem + 3.1373vw, 7.6875rem);
+
+    @media (max-width: 752px) {
+      order: 1;
+    }
+  }
+
+  &_contacts {
+    @media (max-width: 752px) {
+      padding-top: 26px;
+    }
+  }
+
+  &_contact {
+    margin-bottom: 8px;
+    font-family: variables.$helvetica, sans-serif;
+    font-size: 17px;
+    color: rgba(243, 243, 243, 1);
+    cursor: pointer;
+  }
+
+  &_body-bottom {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 109px;
+    cursor: pointer;
+
+    @media (max-width: 1195px) {
+      padding-top: 160px;
+      gap: 16px;
+    }
+  }
+}
+
+.body-bottom {
+  &_info {
+    font-family: variables.$helvetica, sans-serif;
+    font-size: clamp(1.0625rem, 0.9567rem + 0.4575vw, 1.5rem);
+    color: rgba(243, 243, 243, 1);
+  }
+}

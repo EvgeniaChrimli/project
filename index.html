@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="video-bg">
+        <video autoplay muted loop playsinline>
+          <source src="./assets/video/topVodeo.mp4" type="video/mp4" />
+          Ваш браузер не поддерживает видео.
+        </video>
+      </div>
+      <header class="header fade-in">
+        <div class="container">
+          <div class="header_body">
+            <ul class="header_left row">
+              <li class="header_left-item"><a href="#who">команда</a></li>
+              <li class="header_left-item"><a href="#serwice">о сервисе</a></li>
+            </ul>
+            <div class="header_center">
+              <img
+                src="./assets/images/header.svg"
+                alt="logo"
+                class="header_center-logo"
+              />
+            </div>
+
+            <ul class="header_right row">
+              <li class="header_right-item"><a href="#rew">отзывы</a></li>
+              <li class="header_right-item">
+                <a href="#form">обратная связь</a>
+              </li>
+            </ul>
+
+            <div class="burger">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+
+          <div class="mobile">
+            <div class="mobile_body">
+              <img
+                src="./assets/images/closenav.svg"
+                alt="close"
+                class="mobile_close"
+              />
+              <ul class="mobile_list">
+                <li class="mobile_item"><a href="#serwice">о сервисе</a></li>
+                <li class="mobile_item"><a href="#who">команда</a></li>
+                <li class="mobile_item"><a href="#rew">отзывы</a></li>
+                <li class="mobile_item"><a href="#form">обратная связь</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="top fade-in">
+        <div class="container">
+          <div class="top_body">
+            <div class="top_title">
+              Возвращаем время
+              <span class="top_title-italic">для жизни</span>, а не для ленты
+            </div>
+            <button class="top_btn"><a href="#try">Скачать</a></button>
+            <img
+              src="./assets/images/stop.svg"
+              alt="pause"
+              class="top_pause-btn"
+              id="play-toggle"
+            />
+            <audio id="my-audio" preload="auto">
+              <source src="./assets/audio/melody.mp3" type="audio/mpeg" />
+            </audio>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section id="who" class="who fade-in">
+      <div class="container">
+        <div class="who_body">
+          <div class="who_body-1">Кто мы?</div>
+          <div class="who_body-2 num">01</div>
+          <div
+            class="who_body-3 text anim-text"
+            data-text="3 года исследований в области когнитивной науки, психологии и
+            хронической усталости"
+          ></div>
+          <div class="who_body-4 text" data-text="">
+            Мы — команда психологов, digital-экспертов и разработчиков, которые
+            сами столкнулись с информационной перегрузкой.
+          </div>
+          <div class="who_body-5 num">02</div>
+          <div
+            class="who_body-6 text anim-text"
+            data-text="1000+ пользователей, которые уже снизили уровень стресса и обрели
+            баланс между технологиями и внутренним спокойствием"
+          ></div>
+          <div class="who_body-7 italic">
+            Наша миссия — помочь людям использовать технологии осознанно, без
+            вреда для ментального здоровья.
+          </div>
+          <div class="who_body-8 num">03</div>
+          <div
+            class="who_body-9 text anim-text"
+            data-text=" Подтвержденная эффективность: 78% участников отмечают улучшение
+            концентрации уже через 3 недели"
+          ></div>
+        </div>
+      </div>
+    </section>
+    <section class="cursor fade-in">
+      <div class="container">
+        <div class="cursor_body">
+          <div class="cursor_title">FOCUS FLOW</div>
+          <div class="image-sequence">
+            <img
+              src="./assets/images/c1.png"
+              alt="cursor"
+              class="cursor_img-1 img"
+            />
+            <img
+              src="./assets/images/c3.png"
+              alt="cursor"
+              class="cursor_img-2 img"
+            />
+            <img
+              src="./assets/images/c4.png"
+              alt="cursor"
+              class="cursor_img-3 img"
+            />
+            <img
+              src="./assets/images/c5.png"
+              alt="cursor"
+              class="cursor_img-4 img"
+            />
+            <img
+              src="./assets/images/c2.png"
+              alt="cursor"
+              class="cursor_img-5 img"
+            />
+            <img
+              src="./assets/images/c6.png"
+              alt="cursor"
+              class="cursor_img-6 img"
+            />
+          </div>
+        </div>
+        <div class="cursor_images">
+          <img
+            src="./assets/images/cursor1.png"
+            alt="cursor"
+            class="cursor_img"
+          />
+          <img
+            src="./assets/images/cursor2.png"
+            alt="cursor"
+            class="cursor_img"
+          />
+          <img
+            src="./assets/images/cursor3.png"
+            alt="cursor"
+            class="cursor_img"
+          />
+          <img
+            src="./assets/images/cursor4.png"
+            alt="cursor"
+            class="cursor_img"
+          />
+          <img
+            src="./assets/images/cursor5.png"
+            alt="cursor"
+            class="cursor_img"
+          />
+          <img
+            src="./assets/images/cursor6.png"
+            alt="cursor"
+            class="cursor_img"
+          />
+          <img
+            src="./assets/images/cursor7.png"
+            alt="cursor"
+            class="cursor_img"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="serwice" class="serwices fade-in">
+      <div class="container">
+        <div class="serwices_body">
+          <div class="bodyCol">
+            <div class="bodyCol_title">Образовательные курсы</div>
+            <div class="bodyCol_text">
+              Помогают осваивать искусство осознанного потребления: вы учитесь
+              выделять главное, отсекать второстепенное и управлять вниманием
+              как ценным ресурсом.
+            </div>
+            <div class="img-1 colimg"></div>
+          </div>
+          <div class="bodyCol">
+            <div class="bodyCol_title">Медитации</div>
+            <div class="bodyCol_text">
+              Помогают снизить стресс от постоянного потока данных —
+              это короткие аудиопрактики, которые возвращают внимание
+              в настоящий момент и снимают тревожность.
+            </div>
+            <div class="img-2 colimg"></div>
+          </div>
+
+          <div class="bodyCol">
+            <div class="bodyCol_title">Игры</div>
+            <div class="bodyCol_text">
+              Упражнения на внимание, память, и концентрацию, которые создают
+              новые нейронные связи.
+            </div>
+            <div class="img-3 colimg"></div>
+          </div>
+          <div class="bodyCol gradient">
+            <div class="bodyCol_title">Фокус внимания</div>
+            <div class="bodyCol_text">
+              Помогает создать идеальные условия для работы: устанавливайте
+              таймер для глубокой концентрации и автоматически блокируйте
+              отвлекающие сайты или приложения на отведённое время.
+            </div>
+            <div class="img-4 colimg"></div>
+          </div>
+          <div class="bodyCol">
+            <div class="bodyCol_title">Практики </div>
+            <div class="bodyCol_text">
+              Дневник эмоций для анализа реакций, утренние намерения
+              для фокусировки и вечерние итоги для рефлексии.
+            </div>
+            <div class="img-5 colimg"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="rew" class="rewievs fade-in">
+      <div class="container">
+        <div class="rewievs_title">наши пользователи</div>
+      </div>
+
+      <div class="swiper slider">
+        <div class="swiper-wrapper slider_wrapper">
+          <div class="swiper-slide slider_slide">
+            <div class="slider_slide-stars">
+              <img src="./assets/images/review.svg" alt="star" />
+              <img src="./assets/images/review.svg" alt="star" />
+              <img src="./assets/images/review.svg" alt="star" />
+              <img src="./assets/images/review.svg" alt="star" />
+              <img src="./assets/images/review.svg" alt="star" />
+            </div>
+            <div class="slider_slide-name">Иван, 22 года, студент-медик</div>
+            <div class="slider_slide-text">
+              Сначала отнесся скептически, но игра "Медитация-марафон" меня
+              покорила! Это как тренажерный зал для мозга - через 3 недели я
+              реально стал замечать, когда начинаю отвлекаться. А блокировка
+              развлекательных сайтов во время подготовки к экзаменам спасла мою
+              сессию. Самый неожиданный эффект - начал лучше запоминать
+              информацию с лекций. Видимо, потому что мозг наконец-то отдыхает
+              от постоянного инфошума.
+            </div>
+          </div>
+          <div class="swiper-slide slider_slide">
+            <div class="slider_slide-stars">
+              <img src="/assets/images/review.svg" alt="star" />
+              <img src="/assets/images/review.svg" alt="star" />
+              <img src="/assets/images/review.svg" alt="star" />
+              <img src="/assets/images/review.svg" alt="star" />
+              <img src="/assets/images/review.svg" alt="star" />
+            </div>
+            <div class="slider_slide-name">Алексей, 28 лет, IT-специалист</div>
+            <div class="slider_slide-text">
+              Я был типичным информационным наркоманом - 5 мессенджеров,
+              бесконечные новостные ленты и 200+ уведомлений в день. Это
+              приложение буквально спасло мой мозг! Особенно круто работает
+              система "Фокус внимания" - теперь я ставлю 90-минутные таймеры на
+              глубокую работу и реально успеваю за день в 3 раза больше. За
+              месяц сократил время в соцсетях с 6 до 1,5 часов в день, и самое
+              удивительное - даже не скучаю!
+            </div>
+          </div>
+          <div class="swiper-slide slider_slide">
+            <div class="slider_slide-stars">
+              <img src="/assets/images/review.svg" alt="star" />
+              <img src="/assets/images/review.svg" alt="star" />
+              <img src="/assets/images/review.svg" alt="star" />
+              <img src="/assets/images/review.svg" alt="star" />
+              <img src="/assets/images/review.svg" alt="star" />
+            </div>
+            <div class="slider_slide-name">Марина, 34 года, копирайтер</div>
+            <div class="slider_slide-text">
+              После рождения ребенка мое внимание стало похоже на решето, а
+              тревожность зашкаливала. Эти 10-минутные медитации (особенно
+              вечерняя "Расслабление и умиротворение ума.") вернули мне душевное
+              равновесие. А еще обожаю дневник настроения - оказалось, что
+              TikTok всегда портит мне эмоциональный фон! Теперь проверяю
+              соцсети осознанно, а не на автомате. За 2 месяца мой уровень
+              стресса снизился настолько, что даже муж заметил разницу.
+            </div>
+          </div>
+        </div>
+
+        <div class="pagination"></div>
+      </div>
+      <div class="navigation">
+        <div class="button-prev">
+          <svg
+            viewBox="0 0 39 72"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M37 2L3 36L37 70" stroke="black" stroke-width="3" />
+          </svg>
+        </div>
+        <div class="button-next">
+          <svg
+            viewBox="0 0 39 72"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M2 2L36 36L2 70" stroke="black" stroke-width="3" />
+          </svg>
+        </div>
+      </div>
+    </section>
+    <section id="try" class="try fade-in">
+      <div class="try_video-bg">
+        <video autoplay muted loop playsinline>
+          <source src="./assets/video/try.mp4" type="video/mp4" />
+          Ваш браузер не поддерживает видео.
+        </video>
+      </div>
+      <div class="container">
+        <div class="try_body">
+          <div class="try_title">
+            <span class="try_title-italic">Попробуй</span> бесплатно
+            уже&nbsp;сейчас
+          </div>
+          <div class="try_btns">
+            <div class="try_btns-btn">Загрузить для MAC OS</div>
+            <div class="try_btns-btn">Загрузить на Ipone</div>
+            <div class="try_btns-btn">Загрузить для Windows</div>
+            <div class="try_btns-btn">Загрузить на Android</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="form" class="form fade-in">
+      <div class="container">
+        <div class="form_title">
+          есть вопросы?
+          <span class="form_title-italic">Пиши нам!</span>
+        </div>
+        <form class="form-wrap">
+          <div class="form-wrap_body">
+            <div class="input-wrap">
+              <label for="name">Имя:</label>
+              <input name="name" type="text" class="input-wrap_name" />
+              <label for="email">Почта:</label>
+              <input name="email" type="email" class="input-wrap_mail" />
+              <label for="comm">Вопрос или пожелание:</label>
+              <input name="comm" type="text" class="input-wrap_comment" />
+            </div>
+            <div class="form-wrap_btn">Отправить</div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="footer fade-in">
+      <div class="footer_body">
+        <div class="container">
+          <div class="footer_body-row">
+            <div class="footer_body-left">
+              FOCUS FLOW твое&nbsp;внимание в&nbsp;приоритете
+            </div>
+            <div class="footer_body-right">
+              <img
+                src="./assets/images/footer.svg"
+                alt="logo"
+                class="footer_logo"
+              />
+              <div class="footer_contacts">
+                <div class="footer_contact">FOCUSFLOW@mail.ru</div>
+                <div class="footer_contact">+7 920 854 62 36</div>
+              </div>
+            </div>
+          </div>
+          <div class="footer_body-bottom">
+            <div class="body-bottom_info">Политика</div>
+            <div class="body-bottom_info">Оферта</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  </body>
+</html>

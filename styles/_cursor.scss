@@ -1,0 +1,137 @@
+@use "./variables";
+
+.cursor {
+  &_title {
+    font-size: clamp(40px, calc(6.09vw + 25.59px), 112px);
+    font-family: variables.$jun, sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 531px 0 600px;
+
+    @media (max-width: 1441px) {
+      padding: 410px 0 485px;
+    }
+
+    @media (max-width: 440px) {
+      padding: 344px 0 351px;
+    }
+  }
+
+  &_body {
+    position: relative;
+  }
+
+  &_img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 300px;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    opacity: 0;
+    will-change: transform, opacity;
+  }
+
+  @media (max-width: 1195px) {
+    &_img-1,
+    &_img-2,
+    &_img-3,
+    &_img-4,
+    &_img-5,
+    &_img-6 {
+      position: absolute;
+      object-fit: cover;
+    }
+
+    &_img-1 {
+      top: 20%;
+      left: 1%;
+      @media (max-width: 835px) {
+        top: 18%;
+        left: 55%;
+        max-width: 77px;
+      }
+      @media (max-width: 474px) {
+        top: 10%;
+      }
+    }
+    &_img-2 {
+      top: 18%;
+      right: 33%;
+      @media (max-width: 835px) {
+        top: 80%;
+        right: 10%;
+      }
+      @media (max-width: 474px) {
+        top: 57%;
+        right: 50%;
+      }
+    }
+    &_img-3 {
+      top: 20%;
+      right: 8%;
+      @media (max-width: 474px) {
+        top: 35%;
+        width: 78px;
+        height: 43px;
+      }
+    }
+    &_img-4 {
+      top: 65%;
+      left: 4%;
+      @media (max-width: 835px) {
+        max-width: 77px;
+      }
+      @media (max-width: 474px) {
+        top: 78%;
+      }
+    }
+    &_img-5 {
+      bottom: 42%;
+      left: 41%;
+      @media (max-width: 474px) {
+        left: 60%;
+        bottom: 26%;
+      }
+    }
+    &_img-6 {
+      top: 70%;
+      right: 2%;
+      @media (max-width: 835px) {
+        top: 20%;
+        left: 1%;
+      }
+      @media (max-width: 790px) {
+        left: 8%;
+      }
+      @media (max-width: 474px) {
+        top: 26%;
+        height: 58px;
+        width: 200px;
+      }
+    }
+  }
+}
+
+.img {
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+@media (max-width: 474px) {
+  .img {
+    opacity: 0;
+  }
+
+  .img.visible {
+    opacity: 1;
+  }
+
+  .image-sequence.fade-out .img {
+    opacity: 0;
+    transition: opacity 2s ease;
+  }
+}

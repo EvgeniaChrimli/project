@@ -1,0 +1,152 @@
+@use "./variables";
+.wrapper {
+  position: relative;
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100.1%;
+  height: 100.1%;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.video-bg video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.header {
+  font-size: clamp(17px, 1.37vw + 11.85px, 20px);
+  border-bottom: 1px solid black;
+
+  @media (max-width: 719px) {
+    border-bottom: none;
+  }
+
+  &_body {
+    display: flex;
+    justify-content: space-between;
+    font-family: variables.$helvetica, sans-serif;
+  }
+
+  &_center {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 895px) {
+      margin: 0 20px;
+    }
+    @media (max-width: 719px) {
+      margin: 32px 0 0 8px;
+    }
+  }
+
+  &_center-logo {
+    width: clamp(44px, calc(2.13vw + 33px), 64px);
+    height: auto;
+  }
+}
+
+.row {
+  align-items: center;
+  display: flex;
+  padding: 26px 0;
+  gap: 190px;
+}
+
+@media (max-width: 1440px) {
+  .row {
+    gap: 136px;
+  }
+}
+@media (max-width: 1194px) {
+  .row {
+    padding: 34px 10px;
+    gap: 174px;
+  }
+}
+
+@media (max-width: 868px) {
+  .row {
+    gap: 116px;
+  }
+}
+@media (max-width: 837px) {
+  .row {
+    gap: 90px;
+  }
+}
+@media (max-width: 719px) {
+  .row {
+    display: none;
+  }
+}
+
+.burger {
+  display: none;
+  @media (max-width: 712px) {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 46px 8px 0 0;
+    cursor: pointer;
+  }
+}
+
+.burger div {
+  width: 40px;
+  height: 1px;
+  background-color: black;
+}
+
+.mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(-100%);
+  transition: transform 0.4s ease-in-out;
+  z-index: 999;
+  background-color: white;
+  pointer-events: none;
+
+  @media (min-width: 712px) {
+    display: none;
+  }
+
+  &_body {
+    padding-top: 45px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &_close {
+    width: 24px;
+    align-self: flex-end;
+    cursor: pointer;
+  }
+
+  &_list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &_item {
+    border-bottom: 1px solid black;
+    padding: 16px 8px;
+    font-family: variables.$helvetica, sans-serif;
+    font-size: 17px;
+  }
+}
+
+.mob-active {
+  transform: translateY(0%);
+}
