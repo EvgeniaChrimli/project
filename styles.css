@@ -19,10 +19,6 @@
   src: url(../assets/fonts/jun/Jun_Italic.otf) format("opentype");
 }
 .wrapper {
-  position: relative;
-}
-
-.wrapper {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -177,7 +173,7 @@
 }
 @media (max-width: 834px) {
   .top_body {
-    padding-top: 70px;
+    padding-top: 210px;
   }
 }
 .top_title {
@@ -186,6 +182,7 @@
   text-align: center;
   max-width: 1138px;
   margin-bottom: 144px;
+  z-index: -10;
 }
 @media (max-width: 1400px) {
   .top_title {

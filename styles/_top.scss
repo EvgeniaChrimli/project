@@ -20,7 +20,7 @@
     }
 
     @media (max-width: 834px) {
-      padding-top: 70px;
+      padding-top: 210px;
     }
   }
 
@@ -30,6 +30,7 @@
     text-align: center;
     max-width: 1138px;
     margin-bottom: 144px;
+    z-index: -10;
 
     @media (max-width: 1400px) {
       margin-bottom: 72px;
