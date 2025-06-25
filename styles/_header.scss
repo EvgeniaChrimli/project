@@ -22,6 +22,17 @@
   transform: translateZ(0);
   backface-visibility: hidden;
 }
+@media (max-width: 374px) {
+  .video-bg video {
+    display: none;
+  }
+  .wrapper {
+    background-image: url(../assets/images/bggg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 
 .header {
   font-size: clamp(17px, 1.37vw + 11.85px, 20px);

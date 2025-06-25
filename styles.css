@@ -1,22 +1,22 @@
 @font-face {
   font-family: "Helvetica";
-  src: url(/assets/fonts/helvetica/Helvetica.ttf) format("ttf");
+  src: url(../assets/fonts/helvetica/Helvetica.ttf) format("ttf");
 }
 @font-face {
   font-family: "Helvetica-Bold";
-  src: url(/assets/fonts/helvetica/Helvetica-Bold.ttf) format("ttf");
+  src: url(../assets/fonts/helvetica/Helvetica-Bold.ttf) format("ttf");
 }
 @font-face {
   font-family: "Helvetica-italic";
-  src: url(/assets/fonts/helvetica/Helvetica-Neue.ttf) format("ttf");
+  src: url(../assets/fonts/helvetica/Helvetica-Neue.ttf) format("ttf");
 }
 @font-face {
   font-family: "Jun_Regular";
-  src: url(/assets/fonts/jun/Jun_Regular.otf) format("opentype");
+  src: url(../assets/fonts/jun/Jun_Regular.otf) format("opentype");
 }
 @font-face {
   font-family: "Jun-Italic";
-  src: url(/assets/fonts/jun/Jun_Italic.otf) format("opentype");
+  src: url(../assets/fonts/jun/Jun_Italic.otf) format("opentype");
 }
 .wrapper {
   position: relative;
@@ -43,6 +43,17 @@
   backface-visibility: hidden;
 }
 
+@media (max-width: 374px) {
+  .video-bg video {
+    display: none;
+  }
+  .wrapper {
+    background-image: url(../assets/images/bggg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 .header {
   font-size: clamp(17px, 1.37vw + 11.85px, 20px);
   border-bottom: 1px solid black;
@@ -192,7 +203,7 @@
 }
 @media (max-width: 834px) {
   .top_body {
-    padding-top: 409px;
+    padding-top: 70px;
   }
 }
 .top_title {
@@ -707,6 +718,7 @@
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+  transition: all 1s ease-out;
 }
 .bodyCol:hover {
   background: linear-gradient(180deg, #ff9595 0%, #c17aff 127.07%);
@@ -1477,4 +1489,9 @@ a {
 .fade-in.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+video::-webkit-media-controls {
+  display: none !important;
+  -webkit-appearance: none;
 }/*# sourceMappingURL=styles.css.map */
