@@ -43,7 +43,7 @@
   backface-visibility: hidden;
 }
 
-@media (max-width: 374px) {
+@media (max-width: 350px) {
   .video-bg video {
     display: none;
   }
