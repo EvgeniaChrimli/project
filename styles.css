@@ -22,37 +22,12 @@
   position: relative;
 }
 
-.video-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100.1%;
-  height: 100.1%;
-  overflow: hidden;
-  z-index: -1;
-  pointer-events: none;
+.wrapper {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.video-bg video {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  display: block;
-  transform: translateZ(0);
-  backface-visibility: hidden;
-}
-
-@media (max-width: 450px) {
-  .video-bg video {
-    display: none;
-  }
-  .wrapper {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-}
 .header {
   font-size: clamp(17px, 1.37vw + 11.85px, 20px);
   border-bottom: 1px solid black;
