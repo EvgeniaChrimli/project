@@ -897,8 +897,9 @@ body {
 .try_body {
   padding: 136px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-end;
+  gap: 50px;
 }
 @media (max-width: 1441px) {
   .try_body {
