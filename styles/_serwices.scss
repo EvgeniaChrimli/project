@@ -39,7 +39,8 @@
   font-size: clamp(1.0625rem, 0.9567rem + 0.4575vw, 1.5rem);
   font-family: variables.$helvetica, sans-serif;
   border: 3px solid transparent;
-  background: linear-gradient(#ffffff, #ffffff) padding-box,
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
     linear-gradient(180deg, #ff9595 0%, #c17aff 127.07%) border-box;
   border-radius: 30px;
   padding: 40px 50px 31px 56px;
